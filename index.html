@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a6b909bec9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Random Quotes</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">Random Quotes</h1>
+    <div class="quotes">
+    <p class="text" id="quotes"></p>
+    <p class="author">By <span id="author"></span></p>
+    </div>
+    <div class="btn">
+      <button class="b n_quotes" id="new_quotes">New Quotes</button>
+      <button class="b tweetme" id="tweet">Tweet Me</button>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+  <script src="tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".container"),{
+      max:25,
+      speed:1000
+    })
+  </script>
+</body>
+</html>

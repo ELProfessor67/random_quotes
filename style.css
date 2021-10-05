@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("bg.jpeg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.container{
+  width: 300px;
+  height: 380px;
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  border-radius: 10px;
+  border-top: 1px solid rgba(255,255,255,.4);
+  border-left: 1px solid #ffffff80;
+  -webkit-backdrop-filter: blur(2px);
+  padding: 8px 13px;
+  position: relative;
+}
+
+.btn{
+  position: absolute;
+  bottom: 20px;
+}
+
+.b{
+  padding: 15px 20px;
+  width: 120px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px; 
+  font-family: 'Ephesis', cursive;
+}
+
+.n_quotes{
+  margin-right: 10px;
+}
+
+.tweetme{
+  margin-left: 15px;
+}
+
+.header{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Ephesis', cursive;
+}
+
+.text{
+  text-align: center;
+  margin-bottom: 13px;
+  font-size: 22px;
+  font-family: 'Ephesis', cursive;
+}
+
+.author{
+  text-align: right;
+  font-size: 15px;
+  font-family: 'Ephesis', cursive;
+}
+
+.quotes{
+  margin-top: 80px;
+}
